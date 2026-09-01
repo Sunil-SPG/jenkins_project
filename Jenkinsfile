@@ -8,6 +8,9 @@ pipeline {
                 sh 'touch demo.py'
             }
         }
+        stage('Test') {
+            steps {
+                sh 'python3 test.py'
     }
 }
        
